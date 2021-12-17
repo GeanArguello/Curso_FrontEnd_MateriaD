@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #262626;
+    font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+}
+
+/* Tarjeta Pequeña */
+
+.first_card{
+    width: 95%;
+    margin:50px auto;
+    background-color: #ffffff;
+    border-radius: 1em;
+    transition: 0.3s;
+}
+.first_card:hover{
+    box-shadow: 10px 10px 40px rgba(224, 224, 224, 0.548);
+    transform: translateY(10px);
+}
+.card_container{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+.first_card img {
+    border-radius: 0.5em;
+}
+.first_card h2{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-family: Sans Unicode,Tahoma,Sans-Serif;
+}
+.first_card p{
+    columns: #777;
+    font-size: 1em;
+}
+
+/*Tarjeta Grande*/
+.third_card{
+    width: 95%;
+    height: 100%;
+    margin:50px auto;
+    background-color: #ffffff;
+    border-radius: 1em;
+    transition: 0.3s;
+    
+}
+.third_card:hover{
+    box-shadow: 10px 10px 40px rgba(224, 224, 224, 0.219);
+    transform: translateY(10px);
+} 
+.third_card_img{
+    width: 100%;
+    height: 50vh;
+    background-image: 
+    linear-gradient(96deg, rgba(43,228,5,0.6) 15%, rgba(251,143,0,0.40940126050420167) 45%, rgba(244,239,73,0.6) 80%),url(./img/char.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1em 1em 0 0  ;
+}
+.third_card_container{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em 2em 2em;
+    gap: 0.4em;
+}
+.third_card_container label{
+    font-size: 0.7em;
+    color: #ff7a18;
+}
+.third_card_body{
+    padding-bottom:2em ;
+}
+.third_card_body h2{
+    font-family: Sans Unicode,Tahoma,Sans-Serif;
+    padding-bottom: 1em;
+    font-weight: 800;
+}
+.third_card_body a{
+    text-decoration: none;
+    color: #0089c7;
+}
+.third_card_foot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    
+}
+.third_card_foot img {
+    width: 3em;
+    border-radius: 50%;
+    
+}
+
+
+/* MEDIA QUERIES */
+
+@media(min-width: 574px) {
+    body {
+        width: 90%;
+        margin: 50px auto;
+        display: flex;
+        gap: 2em;
+    }
+    .first_card{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+    .third_card{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+    .card_chicas{
+        display: flex;
+        flex-direction: column;
+        margin:0 auto;
+        gap: 2em;
+        width: 100%;
+    }
+    .card_grande{
+        width: 100%;
+    }
+  }
